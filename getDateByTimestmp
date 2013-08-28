@@ -1,0 +1,8 @@
+#!/usr/bin/php
+<?php
+	if(count($argv) < 2)
+	{
+		die("==========\n请输入参数\n==========\n");
+	}
+	echo date('Y-m-d H:i:s',intval($argv[1])) . "\n";
+?>

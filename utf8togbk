@@ -1,0 +1,8 @@
+#!/usr/bin/php
+<?php
+	if($argc < 2)
+	{
+		exit("请携带参数，并用单引号包含\n");
+	}
+	print_r(iconv('gbk','utf-8',$argv[1]));
+?>

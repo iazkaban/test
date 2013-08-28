@@ -1,0 +1,15 @@
+#!/usr/bin/php
+<?php
+	if($argc < 2)
+	{
+		exit("请携带参数，并用单引号包含\n");
+	}
+	if($argv[1] == 'info')
+	{
+		var_dump(json_decode($argv[2],true));
+	}
+	else
+	{
+		print_r(json_decode($argv[1],true));
+	}
+?>

@@ -1,0 +1,18 @@
+#!/usr/bin/php
+<?php
+	if($argc < 2)
+	{
+		exit("请输入需要反序列化的内容\n");
+	}
+	$strForUnserizlize = "";
+	foreach($argv as $key => $strs)
+	{
+		if($key == 0)
+		{
+			continue;
+		}
+		$strForUnserizlize .= " " . $strs;
+	}
+//	echo "\n\n\n\n\n\n\n\n\n\n",$strForUnserizlize,"sssssss";
+	print_r(unserialize($strForUnserizlize));
+?>

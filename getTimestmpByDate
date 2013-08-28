@@ -1,0 +1,8 @@
+#!/usr/bin/php
+<?php
+	if(count($argv) < 2)
+	{
+		die("==========\n请输入参数\n==========\n");
+	}
+	echo strtotime($argv[1]) . "\n";
+?>
